@@ -42,3 +42,22 @@ html {
 		url('fonts/teddy_bear.ttf') format('truetype'), /* Safari, Android, iOS */
 		url('fonts/teddy_bear.svg#teddy_bear') format('svg'); /* Chrome < 4, Legacy iOS */
 }
+.h {
+	color: rgb(27, 25, 177)
+}
+p {
+    color: rgb(146, 25, 177)
+}
+.text {
+    color: rgb(17, 69, 182);
+	font-family: 'Sanka', sans-serif;
+}
+li {
+	color: rgb(146, 25, 177)
+}
+.img {
+	height: 200px;
+}
+a {
+	color: rgb(226, 23, 23)
+}
