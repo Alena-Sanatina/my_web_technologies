@@ -1,0 +1,44 @@
+html {
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  body {
+    font-family: 'Dolphins', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    align-content: center;
+}
+@font-face {
+	font-family: 'Sanka';
+	src: url('fonts/sanka.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/sanka.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/sanka.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/sanka.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/sanka.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/sanka.svg#sanka') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Dolphins';
+	src: url('fonts/dolphins.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/dolphins.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/dolphins.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/dolphins.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/dolphins.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/dolphins.svg#dolphins') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Teddy Bear';
+	src: url('fonts/teddy_bear.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/teddy_bear.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/teddy_bear.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/teddy_bear.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/teddy_bear.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/teddy_bear.svg#teddy_bear') format('svg'); /* Chrome < 4, Legacy iOS */
+}
