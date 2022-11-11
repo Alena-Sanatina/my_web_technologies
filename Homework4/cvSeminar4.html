@@ -1,19 +1,22 @@
 <?php
-  $name = "Алекс";
-  $profession = "Дизайнер";
-  $citi = "Москва/Россия";
-  $email = "dfgdgd@mail.ru";
-  $phone = "89225555555";
+  $name = "Jonny";
+  $profession = "developer";
+  $city = "Mocow";
+  $email = "12@.mail.ru";
+  $phone = "123";
   $skills = [
-   ["name"=>"Photoshop", "percent"=>"35%"],
-   ["name"=>"Photo", "percent"=>"90%"],
-   ["name"=>"Image", "percent"=>"70%"],
-   ["name"=>"Sound", "percent"=>"10%"]];
-  $experience = [
-   ["work"=>"Front End Developer", "startdate"=>"Jan 2015 -", "enddate"=>"Current", "description"=>"Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste."],
-   ["work"=>"Web Developer / som.ru", "startdate"=>"Mar 2012 - ", "enddate"=>"Dec 2014", "description"=>"Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste."],
-   ["work"=>"Graphic Designer / designsom.ru", "startdate"=>"Jun 2010 - ", "enddate"=>"Mar 2012", "description"=>"Lorem ipsum dolor sit amet, consectetur adipisicing elit."]];
+ 	 ["name" => "Photoshop", "percent" => "35%"],
+     ["name" => "Photo", "percent" => "40%"],
+     ["name" => "Image", "percent" => "90%"],
+     ["name" => "Sound", "percent" => "15%"],
+  ];
+  $firstYear = 2000;
+  $currentYear = 2022;
+  $age = $currentYear - $firstYear;
+  $days = $age * 365;
+	
 ?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -44,14 +47,44 @@
         <div class="w3-display-container">
           <img src="https://imgfon.ru/Images/Details_img_880px/Animals/glaza-belyy_fon-kotik-morda-polosatyy.webp" style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>
             <?php echo $name; ?>
+            </h2>
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $profession; ?></p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $citi; ?></p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $email; ?></p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $phone; ?></p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>
+          
+          <?php echo $profession; ?>
+          
+          </p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>
+          
+          <?php echo $city; ?>
+          
+          </p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>
+          
+          <?php echo $email; ?>
+          
+          </p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>
+          
+          <?php echo $phone; ?>
+          
+          </p>
+          
+          <p><i class="fa fa-battery-full fa-fw w3-margin-right w3-large w3-text-teal"></i>
+          
+          <?php echo $age; ?>
+          
+          </p>
+          <p><i class="fa fa-battery-three-quarters fa-fw w3-margin-right w3-large w3-text-teal"></i>
+          
+          <?php echo $days; ?>
+          
+          </p>
+          
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
@@ -87,19 +120,27 @@
 
     <!-- Right Column -->
     <div class="w3-twothird">
+    
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
-        <?php for($i=0; $i<count($experience); $i++) : ?>
         <div class="w3-container">
-        <h5 class="w3-opacity"><b><?php echo $experience[$i]["work"]; ?></b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $experience[$i]["startdate"]; ?><span class="w3-tag w3-teal w3-round"><?php echo $experience[$i]["enddate"]; ?></span></h6>
-          <p><?php echo $experience[$i]["description"]; ?></p>
+          <h5 class="w3-opacity"><b>Front End Developer </b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr>
         </div>
-      <hr>
-     <?php endfor; ?>
-     </div>
-    </div>
-      
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+        </div>
+      </div>
 
       <div class="w3-container w3-card w3-white">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Образование</h2>
